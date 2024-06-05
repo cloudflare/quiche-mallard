@@ -4569,7 +4569,7 @@ impl Connection {
             size: if ack_eliciting { written } else { 0 },
             ack_eliciting,
             in_flight,
-            has_data,
+            has_data: has_data | dgram_emitted,
             pmtud: pmtud_probe,
         };
 
