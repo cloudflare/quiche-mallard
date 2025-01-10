@@ -2,6 +2,15 @@
 members = [ "apps", "octets", "qlog", "quiche" ]
 exclude = [ "fuzz", "tools/http3_test" ]
 
+[workspace.package]
+repository = "https://github.com/cloudflare/quiche-mallard"
+
+[workspace.metadata.release]
+release = false
+pre-release-commit-message = "chore: Release crates"
+tag-name = "{{crate_name}}/{{version}}"
+publish = false
+
 [profile.bench]
 debug = true
 

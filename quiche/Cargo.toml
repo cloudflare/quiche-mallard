@@ -3,9 +3,10 @@ name = "quiche"
 version = "0.21.0"
 authors = ["Alessandro Ghedini <alessandro@ghedini.me>"]
 edition = "2018"
+publish = ["crates-io"]
 build = "src/build.rs"
 description = "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3"
-repository = "https://github.com/cloudflare/quiche"
+repository = { workspace = true }
 readme = "README.md"
 keywords = ["quic", "http3"]
 categories = ["network-programming"]
@@ -55,6 +56,17 @@ internal = []
 no-default-features = true
 features = ["boringssl-boring-crate", "qlog"]
 rustdoc-args = ["--cfg", "docsrs"]
+
+[package.metadata.release]
+release = true
+pre-release-hook = [
+  "git-cliff",
+  "-w", "..",
+  "-o", "../RELEASE_NOTES.md",
+  "--tag", "{{tag_name}}",
+  # Only changes in fork
+  "0.21.0.."
+]
 
 [build-dependencies]
 cmake = "0.1"

@@ -3,8 +3,9 @@ name = "qlog"
 version = "0.13.0"
 authors = ["Lucas Pardue <lucaspardue.24.7@gmail.com>"]
 edition = "2018"
+publish = false
 description = "qlog data model for QUIC and HTTP/3"
-repository = "https://github.com/cloudflare/quiche"
+repository = { workspace = true }
 readme = "README.md"
 keywords = ["qlog", "quic", "http3"]
 categories = ["network-programming"]
