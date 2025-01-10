@@ -1,5 +1,5 @@
 [package]
-name = "quiche"
+name = "quiche-mallard"
 version = "0.21.0"
 authors = ["Alessandro Ghedini <alessandro@ghedini.me>"]
 edition = "2018"

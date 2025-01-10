@@ -27,6 +27,7 @@
 #[macro_use]
 extern crate log;
 
+use quiche_mallard as quiche;
 use ring::rand::*;
 
 const MAX_DATAGRAM_SIZE: usize = 1350;

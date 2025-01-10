@@ -32,6 +32,7 @@ use std::fs::File;
 use std::io::prelude::*;
 use std::io::BufReader;
 
+use quiche_mallard as quiche;
 use quiche::h3;
 
 fn main() {

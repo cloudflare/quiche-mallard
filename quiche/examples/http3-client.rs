@@ -27,6 +27,7 @@
 #[macro_use]
 extern crate log;
 
+use quiche_mallard as quiche;
 use quiche::h3::NameValue;
 
 use ring::rand::*;
