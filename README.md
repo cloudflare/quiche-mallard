@@ -1,9 +1,12 @@
 ![quiche](quiche.svg)
 
-[![crates.io](https://img.shields.io/crates/v/quiche.svg)](https://crates.io/crates/quiche)
-[![docs.rs](https://docs.rs/quiche/badge.svg)](https://docs.rs/quiche)
-[![license](https://img.shields.io/github/license/cloudflare/quiche.svg)](https://opensource.org/licenses/BSD-2-Clause)
-![build](https://img.shields.io/github/actions/workflow/status/cloudflare/quiche/stable.yml?branch=master)
+[![crates.io](https://img.shields.io/crates/v/quiche-mallard.svg)](https://crates.io/crates/quiche-mallard)
+[![docs.rs](https://docs.rs/quiche-mallard/badge.svg)](https://docs.rs/quiche-mallard)
+[![license](https://img.shields.io/github/license/cloudflare/quiche-mallard.svg)](https://opensource.org/licenses/BSD-2-Clause)
+![build](https://img.shields.io/github/actions/workflow/status/cloudflare/quiche-mallard/stable.yml?branch=master)
+
+_This repository contains a fork of cloudflare/quiche with zero-copy and congestion
+control patches. See cloudflare/quiche#1673 and cloudflare/quiche#1742 for details._
 
 [quiche] is an implementation of the QUIC transport protocol and HTTP/3 as
 specified by the [IETF]. It provides a low level API for processing QUIC packets
