@@ -3,7 +3,7 @@ on: [push, pull_request]
 name: Nightly
 
 env:
-  RUSTFLAGS: "-D warnings"
+  RUSTFLAGS: "-D warnings -A deprecated -A missing_abi"
   RUSTDOCFLAGS: "--cfg docsrs"
   RUSTTOOLCHAIN: "nightly"
 

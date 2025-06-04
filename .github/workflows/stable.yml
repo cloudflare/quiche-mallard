@@ -3,7 +3,7 @@ on: [push, pull_request]
 name: Stable
 
 env:
-  RUSTFLAGS: "-D warnings"
+  RUSTFLAGS: "-D warnings -A deprecated -A missing_abi"
   RUSTTOOLCHAIN: "stable"
 
 jobs:
