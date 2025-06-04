@@ -1,4 +1,7 @@
 
+quiche-mallard/0.21.1
+- 2025-06-04 Mark fork as deprecated now that patches are upstream
+
 quiche-mallard/0.21.0
 - 2025-01-13 Bypass static_mut_refs lint
 - 2025-01-13 Add fork description to README
