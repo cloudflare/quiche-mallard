@@ -26,6 +26,10 @@
 
 //! 🥧 Savoury implementation of the QUIC transport protocol and HTTP/3.
 //!
+//! _This was a fork of cloudflare/quiche to test new zero-copy and congestion
+//! control patches. These have been merged upstream as of quiche 0.24.
+//! quiche-mallard is now considered deprecated and archived._
+//!
 //! [quiche] is an implementation of the QUIC transport protocol and HTTP/3 as
 //! specified by the [IETF]. It provides a low level API for processing QUIC
 //! packets and handling connection state. The application is responsible for
@@ -378,6 +382,7 @@
 #![allow(clippy::upper_case_acronyms)]
 #![warn(missing_docs)]
 #![cfg_attr(docsrs, feature(doc_cfg))]
+#![deprecated = "quiche-mallard has been merged into upstream quiche 0.24"]
 
 #[macro_use]
 extern crate log;

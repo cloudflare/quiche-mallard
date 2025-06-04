@@ -5,8 +5,9 @@
 [![license](https://img.shields.io/github/license/cloudflare/quiche-mallard.svg)](https://opensource.org/licenses/BSD-2-Clause)
 ![build](https://img.shields.io/github/actions/workflow/status/cloudflare/quiche-mallard/stable.yml?branch=master)
 
-_This repository contains a fork of cloudflare/quiche with zero-copy and congestion
-control patches. See cloudflare/quiche#1673 and cloudflare/quiche#1742 for details._
+_This was a fork of cloudflare/quiche to test new zero-copy and congestion control
+patches. These have been merged upstream as of quiche 0.24. quiche-mallard is now
+considered deprecated and archived._
 
 [quiche] is an implementation of the QUIC transport protocol and HTTP/3 as
 specified by the [IETF]. It provides a low level API for processing QUIC packets
